@@ -1,0 +1,1 @@
+Packaging the MVP landing page files for doZAR.online to be deployed on GitHub Pages.
