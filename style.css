@@ -40,23 +40,6 @@ header {
   cursor: pointer;
 }
 
-/* Category Navigation */
-.category-nav {
-  display: flex;
-  justify-content: space-around;
-  background-color: #f5f5f5;
-  padding: 10px;
-  border-bottom: 1px solid #ddd;
-}
-
-.category-nav button {
-  background-color: white;
-  border: 1px solid #ddd;
-  padding: 5px 10px;
-  font-size: 0.9rem;
-  cursor: pointer;
-}
-
 /* Hero Section */
 .hero {
   text-align: center;
@@ -66,6 +49,7 @@ header {
 .hero h2 {
   font-size: 2rem;
   font-weight: bold;
+  margin-bottom: 20px;
 }
 
 /* Product Category Buttons */
@@ -73,23 +57,25 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 20px;
+  gap: 15px;
   padding: 20px;
 }
 
 .product-categories button {
   width: 80%;
   max-width: 300px;
-  padding: 20px;
+  padding: 15px;
   background-color: white;
   border: 1px solid black;
   font-size: 1.2rem;
   cursor: pointer;
+  text-align: center;
 }
 
-.product-categories button:last-child {
+.product-categories .empty-button {
   background-color: transparent;
   border: 1px dashed #ddd;
+  cursor: default;
 }
 
 /* Footer */
