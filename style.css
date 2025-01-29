@@ -77,10 +77,14 @@ header {
     background: #008000;
     color: white;
     border: none;
-    padding: 5px 10px;
-    border-radius: 5px;
+    padding: 3px 6px;
+    font-size: 12px;
+    border-radius: 3px;
+    width: auto;
+    min-width: 100px;
     cursor: pointer;
 }
+
 
 .merch {
     padding: 20px;
