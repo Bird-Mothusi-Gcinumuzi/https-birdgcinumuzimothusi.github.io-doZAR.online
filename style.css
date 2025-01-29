@@ -1,72 +1,101 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>doZAR.online</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <nav>
-        <span class="menu-icon">☰</span>
-        <strong class="logo">doZAR.online</strong>
-        <button class="cart-button">🛒</button>
-    </nav>
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-    <section class="categories">
-        <button class="category outdoor">Outdoor</button>
-        <button class="category greenhouse">Greenhouse</button>
-        <button class="category indoor">Indoor</button>
-        <button class="category edibles">Edibles</button>
-        <button class="category merch">Merch</button>
-    </section>
+body {
+  font-family: Arial, sans-serif;
+  background-color: white;
+  color: black;
+}
 
-    <main class="container">
-        <div class="banner">
-            <h2>Weekly Specials</h2>
-            <p>Check out our amazing deals this week!</p>
-        </div>
+/* Header */
+header {
+  background-color: white;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
 
-        <section class="products">
-            <h2>Outdoor</h2>
-            <div class="product-grid">
-                <div class="product-card">
-                    <img src="https://via.placeholder.com/150" alt="Sunkissed OG">
-                    <div class="product-info">
-                        <h3>Sunkissed OG</h3>
-                        <p>Natural terpene profile with citrus and pine notes. 20% THC.</p>
-                        <button>See all buying options</button>
-                    </div>
-                </div>
-                <div class="product-card">
-                    <img src="https://via.placeholder.com/150" alt="Mountain Berry">
-                    <div class="product-info">
-                        <h3>Mountain Berry</h3>
-                        <p>Hybrid strain with 18% THC and 2% CBD. Berry and earth aroma.</p>
-                        <button>See all buying options</button>
-                    </div>
-                </div>
-            </div>
-        </section>
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
-        <section class="merch">
-            <h2>Merchandise</h2>
-            <div class="merch-grid">
-                <div class="merch-item">
-                    <img src="https://via.placeholder.com/100" alt="Heritage Hoodie">
-                    <h3>Heritage Hoodie</h3>
-                </div>
-                <div class="merch-item">
-                    <img src="https://via.placeholder.com/100" alt="Glass Collection">
-                    <h3>Glass Collection</h3>
-                </div>
-            </div>
-        </section>
-    </main>
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: green;
+}
 
-    <footer>
-        <p>&copy; 2025 doZAR.online. All rights reserved.</p>
-    </footer>
-</body>
-</html>
+.icons span {
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.menu-icon {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/* Category Navigation */
+.category-nav {
+  display: flex;
+  justify-content: space-around;
+  background-color: #f5f5f5;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.category-nav button {
+  background-color: white;
+  border: 1px solid #ddd;
+  padding: 5px 10px;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.hero h2 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+/* Product Category Buttons */
+.product-categories {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.product-categories button {
+  width: 80%;
+  max-width: 300px;
+  padding: 20px;
+  background-color: white;
+  border: 1px solid black;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.product-categories button:last-child {
+  background-color: transparent;
+  border: 1px dashed #ddd;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  border-top: 1px solid #ddd;
+  margin-top: 20px;
+}
