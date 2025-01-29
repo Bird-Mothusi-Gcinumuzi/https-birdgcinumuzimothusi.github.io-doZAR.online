@@ -1,55 +1,94 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>doZAR.online</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-</head>
-<body>
-    <header>
-        <div class="menu-icon">&#9776;</div>
-        <h1 class="logo">doZAR.online</h1>
-        <div class="cart-icon">&#128722;</div>
-    </header>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
 
-    <section class="categories">
-        <button class="category">Outdoor</button>
-        <button class="category">Greenhouse</button>
-        <button class="category">Indoor</button>
-        <button class="category">AAA Indoor</button>
-        <button class="category">Edibles</button>
-    </section>
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: #008000;
+    color: white;
+}
 
-    <section class="products">
-        <div class="product-card">
-            <img src="product1.jpg" alt="Product Image">
-            <div class="product-info">
-                <h2>Blue Dream</h2>
-                <p>A classic strain known for its balanced effects.</p>
-                <p class="price">R200</p>
-                <button class="buy-options">See all buying options</button>
-            </div>
-        </div>
-        
-        <div class="product-card">
-            <img src="product2.jpg" alt="Product Image">
-            <div class="product-info">
-                <h2>Lemon Cherry Gelato</h2>
-                <p>Fruity flavors with a strong hybrid effect.</p>
-                <p class="price">R250</p>
-                <button class="buy-options">See all buying options</button>
-            </div>
-        </div>
-    </section>
+.menu-icon, .cart-icon {
+    font-size: 24px;
+    cursor: pointer;
+}
 
-    <section class="merch">
-        <h2>Merchandise</h2>
-        <div class="merch-item">
-            <img src="shirt.jpg" alt="Merch Item">
-            <p>doZAR T-Shirt - R150</p>
-        </div>
-    </section>
-</body>
-</html>
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.categories {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.category {
+    border: none;
+    padding: 10px 15px;
+    border-radius: 20px;
+    background: linear-gradient(to right, #66bb6a, #43a047);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.products {
+    padding: 20px;
+}
+
+.product-card {
+    display: flex;
+    align-items: center;
+    background: white;
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.product-card img {
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+    margin-right: 15px;
+}
+
+.product-info h2 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.price {
+    font-weight: bold;
+    color: #008000;
+}
+
+.buy-options {
+    background: #008000;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.merch {
+    padding: 20px;
+    text-align: center;
+}
+
+.merch-item img {
+    width: 100px;
+    height: auto;
+    margin-top: 10px;
+}
