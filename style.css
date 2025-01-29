@@ -1,4 +1,80 @@
-html {
-  height: 100%;
-  width: 100%;
+body {
+    background-color: #fff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    border-bottom: 1px solid #ddd;
+}
+
+.menu-icon {
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.cart-button {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.categories {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 1rem;
+}
+
+.category {
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.outdoor { background: linear-gradient(to right, #4CAF50, #8BC34A); }
+.greenhouse { background: linear-gradient(to right, #FFEB3B, #FFC107); }
+.indoor { background: linear-gradient(to right, #FFD700, #FF9800); }
+.edibles { background: linear-gradient(to right, #FF4500, #FF0000); }
+.merch { background: linear-gradient(to right, #D32F2F, #B71C1C); }
+
+.banner {
+    text-align: center;
+    padding: 20px;
+    background-color: #f8f9fa;
+    margin: 20px 0;
+}
+
+.products {
+    margin: 20px 0;
+}
+
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.product-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: center;
+    width: 200px;
+}
+
+.merch-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.merch-item {
+    text-align: center;
 }
