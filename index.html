@@ -4,68 +4,63 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>doZAR.online</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
-    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <nav>
-        <span class="menu-icon">☰</span>
-        <strong class="logo">doZAR.online</strong>
-        <button class="cart-button">🛒</button>
+<body class="bg-white text-gray-900">
+    <!-- Header -->
+    <nav class="flex items-center justify-between px-6 py-4 border-b">
+        <span class="text-green-600 text-2xl font-bold">doZAR.online</span>
+        <button class="text-2xl">☰</button>
+        <button class="text-2xl">🛒</button>
     </nav>
 
-    <section class="categories">
-        <button class="category outdoor">Outdoor</button>
-        <button class="category greenhouse">Greenhouse</button>
-        <button class="category indoor">Indoor</button>
-        <button class="category edibles">Edibles</button>
-        <button class="category merch">Merch</button>
+    <!-- Category Buttons -->
+    <div class="flex justify-center space-x-4 py-4">
+        <button class="px-4 py-2 rounded-lg bg-green-500 text-white">Outdoor</button>
+        <button class="px-4 py-2 rounded-lg bg-yellow-500 text-white">Greenhouse</button>
+        <button class="px-4 py-2 rounded-lg bg-orange-500 text-white">Indoor</button>
+        <button class="px-4 py-2 rounded-lg bg-red-500 text-white">Edibles</button>
+        <button class="px-4 py-2 rounded-lg bg-blue-500 text-white">Merch</button>
+    </div>
+
+    <!-- Banner -->
+    <div class="text-center bg-gray-100 py-6">
+        <h2 class="text-2xl font-bold">Weekly Specials</h2>
+        <p>Check out our amazing deals this week!</p>
+    </div>
+
+    <!-- Products -->
+    <section class="px-6 py-4">
+        <h2 class="text-xl font-bold pb-2">Outdoor</h2>
+        <div class="grid gap-4">
+            <div class="flex items-center border p-4 rounded-lg shadow">
+                <img src="https://via.placeholder.com/100" class="rounded-lg" alt="Product">
+                <div class="ml-4">
+                    <h3 class="text-lg font-semibold">Sunkissed OG</h3>
+                    <p class="text-sm">Natural terpene profile with citrus and pine notes. 20% THC.</p>
+                    <button class="mt-2 px-3 py-1 bg-blue-600 text-white rounded">See all buying options</button>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <main class="container">
-        <div class="banner">
-            <h2>Weekly Specials</h2>
-            <p>Check out our amazing deals this week!</p>
+    <!-- Merch Section -->
+    <section class="px-6 py-4 bg-gray-50">
+        <h2 class="text-xl font-bold pb-2">Merch</h2>
+        <div class="flex space-x-4">
+            <div class="text-center">
+                <img src="https://via.placeholder.com/80" class="rounded-lg" alt="Merch">
+                <h3 class="text-md font-semibold">Heritage Hoodie</h3>
+            </div>
+            <div class="text-center">
+                <img src="https://via.placeholder.com/80" class="rounded-lg" alt="Merch">
+                <h3 class="text-md font-semibold">Glass Collection</h3>
+            </div>
         </div>
+    </section>
 
-        <section class="products">
-            <h2>Outdoor</h2>
-            <div class="product-grid">
-                <div class="product-card">
-                    <img src="https://via.placeholder.com/150" alt="Sunkissed OG">
-                    <div class="product-info">
-                        <h3>Sunkissed OG</h3>
-                        <p>Natural terpene profile with citrus and pine notes. 20% THC.</p>
-                        <button>See all buying options</button>
-                    </div>
-                </div>
-                <div class="product-card">
-                    <img src="https://via.placeholder.com/150" alt="Mountain Berry">
-                    <div class="product-info">
-                        <h3>Mountain Berry</h3>
-                        <p>Hybrid strain with 18% THC and 2% CBD. Berry and earth aroma.</p>
-                        <button>See all buying options</button>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="merch">
-            <h2>Merchandise</h2>
-            <div class="merch-grid">
-                <div class="merch-item">
-                    <img src="https://via.placeholder.com/100" alt="Heritage Hoodie">
-                    <h3>Heritage Hoodie</h3>
-                </div>
-                <div class="merch-item">
-                    <img src="https://via.placeholder.com/100" alt="Glass Collection">
-                    <h3>Glass Collection</h3>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer>
+    <!-- Footer -->
+    <footer class="text-center py-4 border-t">
         <p>&copy; 2025 doZAR.online. All rights reserved.</p>
     </footer>
 </body>
