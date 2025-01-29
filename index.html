@@ -2,79 +2,54 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>doZAR.online</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <nav>
-        <span class="menu-icon">☰</span>
-        <strong>doZAR.online</strong>
-        <button class="cart-button">🛒</button>
-    </nav>
+    <header>
+        <div class="menu-icon">&#9776;</div>
+        <h1 class="logo">doZAR.online</h1>
+        <div class="cart-icon">&#128722;</div>
+    </header>
 
     <section class="categories">
-        <button class="category outdoor">Outdoor</button>
-        <button class="category greenhouse">GH</button>
-        <button class="category indoor">Indoor</button>
-        <button class="category edibles">HeaWea</button>
-        <button class="category merch">Merch</button>
+        <button class="category">Outdoor</button>
+        <button class="category">Greenhouse</button>
+        <button class="category">Indoor</button>
+        <button class="category">AAA Indoor</button>
+        <button class="category">Edibles</button>
     </section>
 
-    <main class="container">
-        <div class="banner">
-            <h2>Weekly Specials</h2>
-            <p>Check out our amazing deals this week!</p>
+    <section class="products">
+        <div class="product-card">
+            <img src="product1.jpg" alt="Product Image">
+            <div class="product-info">
+                <h2>Blue Dream</h2>
+                <p>A classic strain known for its balanced effects.</p>
+                <p class="price">R200</p>
+                <button class="buy-options">See all buying options</button>
+            </div>
         </div>
-
-        <section class="products">
-            <h2>Outdoor</h2>
-            <div class="product-grid">
-                <div class="product-card">
-                    <img src="https://via.placeholder.com/150" alt="Sunkissed OG">
-                    <h3>Sunkissed OG</h3>
-                    <p>Natural terpene profile with citrus and pine notes. 20% THC.</p>
-                    <button>See all buying options</button>
-                </div>
-                <div class="product-card">
-                    <img src="https://via.placeholder.com/150" alt="Mountain Berry">
-                    <h3>Mountain Berry</h3>
-                    <p>Hybrid strain with 18% THC and 2% CBD. Berry and earth aroma.</p>
-                    <button>See all buying options</button>
-                </div>
+        
+        <div class="product-card">
+            <img src="product2.jpg" alt="Product Image">
+            <div class="product-info">
+                <h2>Lemon Cherry Gelato</h2>
+                <p>Fruity flavors with a strong hybrid effect.</p>
+                <p class="price">R250</p>
+                <button class="buy-options">See all buying options</button>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section class="products">
-            <h2>Greenhouse</h2>
-            <div class="product-grid">
-                <div class="product-card">
-                    <img src="https://via.placeholder.com/150" alt="Glass House Kush">
-                    <h3>Glass House Kush</h3>
-                    <p>Climate-controlled cultivation producing dense, resinous buds.</p>
-                    <button>See all buying options</button>
-                </div>
-            </div>
-        </section>
-
-        <section class="merch">
-            <h2>Merchandise</h2>
-            <div class="merch-grid">
-                <div class="merch-item">
-                    <img src="https://via.placeholder.com/100" alt="Heritage Hoodie">
-                    <h3>Heritage Hoodie</h3>
-                </div>
-                <div class="merch-item">
-                    <img src="https://via.placeholder.com/100" alt="Glass Collection">
-                    <h3>Glass Collection</h3>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2025 doZAR.online. All rights reserved.</p>
-    </footer>
+    <section class="merch">
+        <h2>Merchandise</h2>
+        <div class="merch-item">
+            <img src="shirt.jpg" alt="Merch Item">
+            <p>doZAR T-Shirt - R150</p>
+        </div>
+    </section>
 </body>
 </html>
